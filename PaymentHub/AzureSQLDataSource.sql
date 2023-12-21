@@ -1,5 +1,5 @@
 /*
- * These tables supports multiple PIX Aquirers (Cielo and Itau)
+ * These tables supports multiple PIX Acquirers (Cielo and Itau)
  */
 
 CREATE TABLE [Acquirer](
