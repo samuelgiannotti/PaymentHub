@@ -1,5 +1,5 @@
 # PaymentHub
-asp net core 7 gRPC docker AzureSQL DEVOPS
+The PaymentHub is a smart and robust with NO single point of failure including acquirer.
 
 THIS CODE IMPLEMENTS ITAU SECURE MTLS PRODUCTION ENVIROMENT (THIS Version does not support Itau test environment, because it does not support mTLS comunication)
 
@@ -14,3 +14,5 @@ Cielo integration will be avaliable in the next version.
 Use AcquirerId to indicate Acquirer (Itau or Cielo) in Database configuration AzureSQLDataSource.sql file.
 
 The certificate PSX file must be injected on POD, same way appsettings.json is.
+
+asp net core 7 gRPC docker AzureSQL DEVOPS
