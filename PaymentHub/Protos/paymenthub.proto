@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+option csharp_namespace = "PaymentHub";
+
+package PaymentHub;
+
+// The greeting service definition.
+service PaymentHub {
+  // Sends a greeting
+  rpc GeneratePIXCopiaECola (GeneratePIXRequest) returns (GeneratePIXReply);
+
+  rpc IsPIXPayed (CheckPIXPaymentStatusRequest) returns (CheckPIXPaymentStatusReply);
+}
+
+// The request message containing the user's name.
+message GeneratePIXRequest {
+  string nome = 1;
+  double valor = 2;
+  string document = 3;
+  int32 customerId = 4;
+  int32 orderId = 5;
+}
+
+// The response message containing the greetings.
+message GeneratePIXReply {
+  string pixCopiaECola = 1;
+  int32 paymentId = 2;
+}
+
+//service GetPIXPaymentStatus {
+  // Sends a greeting
+  
+//}
+
+message CheckPIXPaymentStatusRequest {
+	int32 orderId = 1;
+}
+
+message CheckPIXPaymentStatusReply {
+	bool isPayed = 1;
+}
